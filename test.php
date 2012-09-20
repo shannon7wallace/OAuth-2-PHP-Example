@@ -1,1 +1,0 @@
-<?php$apiKey = "";$redirectURI = "";echo "Click below to begin Oauth flow <br>";echo "<a href='https://oauth2.constantcontact.com/oauth2/oauth/siteowner/authorize?response_type=code&client_id=$apiKey&redirect_uri=$redirectURI'>Click Here</a>";echo "<br>";?>
