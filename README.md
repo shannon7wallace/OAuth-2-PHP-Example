@@ -9,8 +9,8 @@ How To Use These FIles to Authenticate Using OAuth 2
 
 1.  Go to http://community.constantcontact.com/t5/Documentation/API-Keys/ba-p/25015 and generate an API Key if you haven't already.  Go to that link even if you've already created your API Key, and take note of your API Key, Consumer secret, and Redirect URI.  Make sure your redirect URI is a page that you can access in your website.
 2.  Go into the config.php file and set the values for $apikey, $consumersecret, $verificationURL, and $returnURL.
-3.  Go into the answer.php file and add the values for $apiKey and $redirectURI.
-3.  Navigate to the file on your server (in your web browser) that contains the OAuth 2 files.  Click on the link that says "Authorize here".
+3.  Go into the answer.php file and add the values for $apiKey, $consumerSecret and $redirectURI.  If in doubt, use the same URL for redirectURI, returnURL, and verificationURL.  This can be the full URL of your answer.php file.
+3.  Navigate to the index.php file on your server (in your web browser) that contains the OAuth 2 files.  Click on the link that says "Authorize here."
 4.  Provide your Constant Contact credentials on the login screen.
 5.  Grant access.
 6.  "Click here"
