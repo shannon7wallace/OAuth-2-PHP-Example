@@ -39,7 +39,7 @@ if (!$result = curl_exec($rq)) {
 	//Use the DataStore to store the User in the PHP Session.
 	$Datastore->addUser($user);
 	//Create a link back to index.php where we can now use the Session Data.
-	echo "\n<a href='http://127.0.0.1/oauth/index.php'>Click Here to Continue</a></pre>";
+	echo "\n<a href='redirect_uri'>Click Here to Continue</a></pre>"; //Replace redirect_uri with your index.php full URL.
 }
 
 curl_close($rq);
