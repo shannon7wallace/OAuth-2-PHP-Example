@@ -7,12 +7,14 @@ Extended Instructions:
 
 How To Use These FIles to Authenticate Using OAuth 2
 
-1.  Go to http://community.constantcontact.com/t5/Documentation/API-Keys/ba-p/25015 and generate an API Key if you haven't already. Go to that link even if you've already created your API Key, and take note of your API Key, Consumer secret, and Redirect URI. Make sure your redirect URI is a page that you can access in your website. This redirect URI will ultimately need to be the answer.php file hosted on your server.
-2.	Go into the config.php file and set the values for $apikey, $consumersecret, $verificationURL, and $returnURL.
-3.	Go into the answer.php file and add the values for $apiKey, $consumerSecret and $redirectURI. If in doubt, use the same URL for redirectURI, returnURL, and verificationURL. This should be the full URL of your answer.php file.
-4.	Navigate to the index.php file on your server (in your web browser) that contains the OAuth 2 files. Click on the link that says “Click here to Authenticate.”
-5.	Provide your Constant Contact credentials on the login screen.
-6.	Grant access.
-7.	You will be shown your access token and also you will be able to click on “Click Here to Continue.”
-8.	If you click to continue you will be able to use an example tool for searching contact email addresses which makes use of the access token you generated.
-9.	If you have any issues, you can reach out to us at webservices@constantcontact.com
+1.  Download the files here and host them on your server.
+2.  Go to http://community.constantcontact.com/t5/Documentation/API-Keys/ba-p/25015 and generate an API Key if you haven't already. Go to that link even if you've already created your API Key, and take note of your API Key, Consumer secret, and Redirect URI. Make sure your redirect URI is a page that you can access in your website. This redirect URI will ultimately need to be the answer.php file hosted on your server.
+3.	Go into the config.php file and set the values for $apikey, $consumersecret, $verificationURL, and $returnURL.
+4.	Go into the answer.php file and add the values for $apiKey, $consumerSecret and $redirectURI. If in doubt, use the same URL for redirectURI, returnURL, and verificationURL. This should be the full URL of your answer.php file.
+5.	Navigate to the index.php file on your server (in your web browser) that contains the OAuth 2 files. Click on the link that says “Click here to Authenticate.”
+6.	Provide your Constant Contact credentials on the login screen.
+7.	Grant access.
+8.	You will be shown your access token and also you will be able to click on “Click Here to Continue” (but it won't work until you do the steps below).
+9.  To continue, save the value for the access token and your username in lines 31 and 32 of config.php (and uncomment those lines).  Also set the full URL of index.php for "redirect_uri" on line 42 of answer.php.
+10.	If you go back to answer.php and click to continue you will be able to use an example tool for searching contact email addresses which makes use of the access token you generated.
+11.	If you have any issues, you can reach out to us at webservices@constantcontact.com.
